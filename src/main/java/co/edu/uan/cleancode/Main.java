@@ -2,6 +2,7 @@ package co.edu.uan.cleancode;
 
 import java.util.Scanner;
 
+
 // En ninguna parte del código
 public class Main {
 
