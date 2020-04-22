@@ -2,8 +2,6 @@ package co.edu.uan.cleancode;
 
 import java.util.Scanner;
 
-
-// En ninguna parte del código
 public class Main {
 
     // Este nombre de variable no es significativo, el nombre de este podría ser jugador
@@ -12,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         // Utiliza nombres de variables con notación lower camell case
         CleanCodeClass ClaseLimpiaCodigo = new CleanCodeClass("Muggle");
-        ClaseLimpiaCodigo.saludo();
+        ClaseLimpiaCodigo.MostrarSaludo();
 
         Scanner leer = new Scanner(System.in);
 

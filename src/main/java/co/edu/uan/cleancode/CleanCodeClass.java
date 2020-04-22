@@ -26,8 +26,8 @@ public class CleanCodeClass {
     public CleanCodeClass (String paramCadena) {
         this.usuario = paramCadena;
     }
-    // Los métodos deben ser nombrados con verbos
-    public void saludo() {
+   
+    public void MostrarSaludo() {
         imprime("Hola " + this.usuario + "!");
     }
 
