@@ -21,7 +21,7 @@ public class Main {
         // evitar la creación de trenes,
         if (leer.next().toLowerCase().startsWith("s")) {
             CleanCodeClass.imprime("Acertaste! Haz ganado 1 punto. Deben ser aún más pequeñas de lo que piensas.");
-            soyPrivado.masUno();
+            soyPrivado.aumentar();
         } else {
             CleanCodeClass.imprime("Fallaste. Una función hace una sola cosa.\n" +
                     "Una función responde algo o devuelve algo.\n" +
@@ -31,7 +31,7 @@ public class Main {
         CleanCodeClass.imprime("\n- ¿Las líneas de código pueden superar más de 120 caracteres? S/N");
         if (leer.next().toLowerCase().startsWith("n")) {
             CleanCodeClass.imprime("Acertaste! Haz ganado 1 punto. No se aconseja que las líneas ocupen más del tamaño de una pantalla.");
-            soyPrivado.masUno();
+            soyPrivado.aumentar();
         } else {
             CleanCodeClass.imprime("Lo sentimos, vamos con la siguiente! No se aconseja que las líneas ocupen más del tamaño de una pantalla.");
         }
@@ -39,7 +39,7 @@ public class Main {
         CleanCodeClass.imprime("\n- ¿Se aconseja más de 2 argumentos? S/N");
         if (leer.next().toLowerCase().startsWith("s")) {
             CleanCodeClass.imprime("Acertaste! Haz ganado 1 punto en esta pregunta con cáscara. Tienes razón pero ten cuidado, se aconsejan hasta máximo 3 argumentos.");
-            soyPrivado.masUno();
+            soyPrivado.aumentar();
         } else {
             CleanCodeClass.imprime("Sigue intentando... Se aconseja hasta máximo 3 argumentos!");
         }
@@ -50,15 +50,15 @@ public class Main {
                     "Escoge entre arriba(1), abajo(2), izquierda(3) o derecha(4).", soyPrivado.getPuntaje()));
             String direccion = leer.next();
             if (direccion.startsWith("1")) {
-                soyPrivado.muevaArriba();
+                soyPrivado.moverArriba();
             } else if (direccion.startsWith("2")) {
-                soyPrivado.muevaAbajoFuncion();
+                soyPrivado.moverAbajo();
             } else if (direccion.startsWith("3")) {
-                soyPrivado.muevaIz();
+                soyPrivado.moverIzquierda();
             } else if (direccion.startsWith("4")) {
-                soyPrivado.mDer();
+                soyPrivado.moverDerecha();
             }
-            soyPrivado.imprimimame();
+            soyPrivado.imprimir();
         }
     }
 }

@@ -39,31 +39,31 @@ public class MeLlamoDiferente {
     }
 
     // Los nombres de los métodos deben ser verbos, ej: moverArriba
-    public void muevaArriba() {
+    public void moverArriba() {
         this.posicionPremio = Posicion.ARRIBA;
     }
 
     // Los nombres de los métodos deben ser verbos, ej: moverAbajo
     // no deben tener el nombre función, genera ruido innecesario
-    public void muevaAbajoFuncion() {
+    public void moverAbajo() {
         this.posicionPremio = Posicion.ABAJO;
     }
 
     // Los nombres de los métodos deben ser verbos, ej: moverIzquierda
     // los nombres deben ser pronunciables, sin acortar palabras que luego puedan confundir
-    public void muevaIz() {
+    public void moverIzquierda() {
         this.posicionPremio = Posicion.IZQUIERDA;
     }
 
     // Los nombres de los métodos deben ser verbos, ej: moverDerecha
     // los nombres deben ser pronunciables, sin acortar palabras que luego puedan confundir
-    public void mDer() {
+    public void moverDerecha() {
         this.posicionPremio = Posicion.DERECHA;
     }
 
     // Los métodos deben ser nombrados con verbos
     // por ejemplo, imprimirPremio
-    public void imprimimame() {
+    public void imprimir() {
         String left = "";
         String rigth = "";
         int top = 0;
@@ -125,7 +125,7 @@ public class MeLlamoDiferente {
     }
 
     // Los métodos deben ser nombrados con verbos
-    public void masUno() {
+    public void aumentar() {
         this.puntaje++;
     }
 
