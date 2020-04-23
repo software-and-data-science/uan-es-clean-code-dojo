@@ -52,7 +52,7 @@ public class Main {
             if (direccion.startsWith("1")) {
                 soyPrivado.muevaArriba();
             } else if (direccion.startsWith("2")) {
-                soyPrivado.muevaAbajoFuncion();
+                soyPrivado.moverAbajo();
             } else if (direccion.startsWith("3")) {
                 soyPrivado.muevaIz();
             } else if (direccion.startsWith("4")) {

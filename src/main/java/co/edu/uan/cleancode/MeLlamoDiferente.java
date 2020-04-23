@@ -8,15 +8,15 @@ enum Posicion {
     DERECHA(3);
 
     // Use nombres de atributos descriptivos, ej: posicion
-    private int pos;
+    private int posicion;
 
-    Posicion(int posi) {
-        this.pos = posi;
+    Posicion(int posicion) {
+        this.posicion = posicion;
     }
 
     // use verbos, por ejemplo, getPosicion
-    public int gPos() {
-        return pos;
+    public int getPosicion() {
+        return posicion;
     }
 }
 
