@@ -2,11 +2,7 @@ package co.edu.uan.cleancode;
 
 import java.util.Scanner;
 
-
-// En ninguna parte del código
 public class Main {
-
-    // Este nombre de variable no es significativo, el nombre de este podría ser jugador
     public static Jugador soyPrivado = new Jugador();
 
     public static void main(String[] args) {
@@ -17,8 +13,6 @@ public class Main {
         Scanner leer = new Scanner(System.in);
 
         UtilidadesSesion.imprimir("\n- ¿Las funciones deben ser pequeñas? S/N");
-        // Se pueden extraer los nombres a variables, por ejemplo, String respuesta = leer.next().toLowerCase();
-        // evitar la creación de trenes,
         if (leer.next().toLowerCase().startsWith("s")) {
             UtilidadesSesion.imprimir("Acertaste! Haz ganado 1 punto. Deben ser aún más pequeñas de lo que piensas.");
             soyPrivado.agregarPuntaje();

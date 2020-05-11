@@ -5,13 +5,10 @@ import co.edu.uan.cleancode.core.Posicion;
 
 public class Jugador {
 
-    // puntaje podría ser privado, los atributos privados van arriba de los públicos
     int puntaje;
 
-    // posición podría ser privado, los atributos privados van arriba de los públicos
     Posicion posicionPremio;
 
-    // El nombre del constructor y la clase deben ser más descriptivos
     public Jugador() {
         puntaje = 0;
         posicionPremio = Posicion.DERECHA;
@@ -63,8 +60,7 @@ public class Jugador {
         }
         return parametroResultado;
     }
-    // Los métodos deben ser nombrados con verbos
-    // por ejemplo, imprimirPremio
+
     public void imprimirResultados() {
         ParametroResultado parametroResultado = this.definirPisicionPremio();
 
@@ -90,7 +86,6 @@ public class Jugador {
         UtilidadesSesion.imprimir(textoPremio);
     }
 
-    // Los métodos deben ser nombrados con verbos
     public void agregarPuntaje() {
         this.puntaje++;
     }
